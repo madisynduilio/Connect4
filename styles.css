@@ -7,3 +7,31 @@ h1 {
   margin: 10px;
   margin-top: -90px;
 }
+/* margin,font and color default */
+html,body{
+  margin:50px;
+  font-family: georgia;
+  background-color: white;
+}
+/* Board positioning for center of page and overflow hidden to make sure there is room for game win content on top and no overlap on sides */
+.board{
+	position: relative;
+	overflow: hidden;
+	
+	margin: auto;
+	max-width:705px;
+}
+/* Positions board and connect 4 circles in correct place and color (columns) */
+.connect4 {
+	background-color: darkblue;
+	background: darkblue;
+
+	padding:2px;
+}
+/* Make board square and cursor/background color change when interacting*/
+.connect4 > div {
+	width:100px;
+	height:100px;
+
+	position:relative;
+}
